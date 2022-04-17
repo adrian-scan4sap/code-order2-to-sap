@@ -314,16 +314,16 @@ namespace code_order2_to_sap
             if (!company.Connected)
             {
                 /* Server connection details */
-                company.Server = @"W2019P\W2019";
+                company.Server = "sql-server-name";
                 company.DbServerType = BoDataServerTypes.dst_MSSQL2016;
                 company.DbUserName = "sa";
-                company.DbPassword = "Core.Xray.Wms2019";
+                company.DbPassword = "sql-password";
                 company.UseTrusted = false;
 
                 /* SAP connection details: DB, SAP User and SAP Password */
-                company.CompanyDB = "SBODEMOUS";
-                company.UserName = "manager";
-                company.Password = "corexray";
+                company.CompanyDB = "SAP-database-name";
+                company.UserName = "SAP-user";
+                company.Password = "SAP-password";
 
                 /* In case the SAP license server is kept in a different location (in most cases can be left empty) */
                 company.LicenseServer = "";
